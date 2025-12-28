@@ -1,0 +1,21 @@
+CREATE TABLE shopping_trends (
+    Customer_ID INT PRIMARY KEY,
+    Age INT,
+    Gender VARCHAR(20),
+    Item_Purchased VARCHAR(100),
+    Category VARCHAR(50),
+    Purchase_Amount_USD DECIMAL(10, 2),
+    Location VARCHAR(100),
+    Size VARCHAR(10),
+    Color VARCHAR(30),
+    Season VARCHAR(20),
+    Review_Rating DECIMAL(3, 1),
+    Subscription_Status VARCHAR(10),
+    Payment_Method VARCHAR(50),
+    Shipping_Type VARCHAR(50),
+    Discount_Applied VARCHAR(10),
+    Promo_Code_Used VARCHAR(10),
+    Previous_Purchases INT,
+    Preferred_Payment_Method VARCHAR(50),
+    Frequency_of_Purchases VARCHAR(50)
+);
