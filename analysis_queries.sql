@@ -1,5 +1,5 @@
 -- ==========================================
--- PROJECT: E-Commerce Sales Analysis
+--PROJECT: E-Commerce Sales Analysis
 -- AUTHOR: [Annepu pavankalyan]
 -- ==========================================
 
@@ -27,3 +27,10 @@ SELECT Payment_Method, COUNT(*) as usage_count
 FROM shopping_trends
 GROUP BY Payment_Method
 ORDER BY usage_count DESC;
+
+--5. avg_ratings and count of item_purchased 
+
+select item_purchased, avg(review_rating) as avg_ratings ,count(*) as sales_count 
+from shopping_trends
+group by Item_Purchased
+order by sales_count desc ;
